@@ -1,0 +1,177 @@
+body {
+    background-color: rgb(255, 211, 218);
+    
+   
+}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    
+}
+
+#banner {
+    max-width: 1100px;
+    height: 250px;
+    background-color: rgb(255, 175, 207);
+}
+
+#banner header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+h1 {
+  font-family: "Cabin Sketch", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-style: normal;
+  font-size: 3rem;
+  color: rgb(176, 57, 77);
+  line-height: 1.8rem;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+
+h2 {
+    font-family: "Host Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  text-align: center;
+  color: rgb(199, 106, 122);
+  line-height: 0.4rem;
+}
+
+h3 {
+    font-family: "Host Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.4rem;
+  text-align: center;
+  color: rgb(199, 106, 122);
+  line-height: 1.4rem;
+  text-decoration: underline;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    max-width: 230px;
+    
+}
+
+li {
+    font-family: "Libre Caslon Condensed", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.2rem
+}
+
+ul li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.column a {
+    text-decoration: none;
+    list-style-type: none;
+    color:rgb(208, 79, 131);
+    text-align: center;
+    justify-content: center;
+}
+
+#main {
+    display: flex;
+    
+    padding: 10px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    gap: 10px;
+}
+
+/*
+#button {
+    display: flex;
+    background-color:rgb(241, 161, 179);
+    width: 180px;
+    padding: 17px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    line-height: .3rem;
+}
+*/
+
+li:hover {
+    background-color: rgb(249, 184, 209);
+    transition: 0.4s ease;
+}
+
+li {
+    display: flex;
+    background-color:rgb(241, 161, 179);
+    width: 130px;
+    padding: 17px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    line-height: .3rem;
+}
+
+footer {
+    background-color: rgb(254, 176, 189);
+    display: block;
+    max-width: 1100px;
+    height: 100px
+}
+
+footer a {
+    list-style-type: none;
+    text-decoration: none;
+    color:rgb(208, 79, 131);
+    font-family: "Libre Caslon Condensed", serif;
+    font-size: 1.2rem;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    padding: 30px;
+    text-decoration: underline;
+}
+
+
