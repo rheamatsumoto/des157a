@@ -1,0 +1,44 @@
+h1 {
+  font-family: "Cabin Sketch", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-style: normal;
+  font-size: 3rem;
+  color: rgb(176, 57, 77);
+  line-height: 1.8rem;
+  animation: float 2s ease-in-out infinite;
+}
+
+p {
+    font-family: "Host Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.9rem;
+  text-align: center;
+  color: rgb(199, 106, 122);
+  line-height: 1.4rem;
+  width: 15rem;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+
+body {
+    background-color: rgb(255, 211, 218);
+    
+   
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color:rgb(208, 79, 131);
+    font-family: "Libre Caslon Condensed", serif;
+    font-size: 1.2rem;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    padding: 30px;
+    text-decoration: underline;
+}
