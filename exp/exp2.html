@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exp 2</title>
+</head>
+<body>
+    <p>This website will randomly pick a pet for you</p>
+
+    <p>Step 1: Right click and click Inspect</p>
+
+    <p>Step 2: Open the Console</p>
+    
+    <script>
+        //makes all p's purple
+        var paragraphs = document.querySelectorAll('p');
+        for(var i=0; i<paragraphs.length; i++){
+            paragraphs[i].style.color = "purple";
+        }
+        for(var individual of paragraphs){
+            individual.style.color = "purple";
+        }
+
+        var uniqueName = prompt('enter your name', '');
+        var pets = ['cat', 'parrot', 'snake', 'hamster', 'rabbit'];
+
+        function hello(name){
+            var greeting;
+            if(name == null | name == ''){
+                greeting = "please enter a name"
+            } else {
+                greeting = `Hello ${name}`;
+            }
+            return greeting;
+        }
+
+        function randomInteger(min, max){
+            return math.floor((min - max + 1) * Math.random()) * min;
+
+        }
+
+        function prompt(name, pet){
+            var randomPet = pet[randomInteger(0, pet.length-1)];
+            console.log(`${name}, you should get a ${randomPet}`);
+        }
+
+        prompt(uniqueName, pet);
+    </script>
+</body>
+</html>
