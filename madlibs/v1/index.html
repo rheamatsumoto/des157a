@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> 
+    <title>Madlibs BBQ Party</title>
+</head>
+<body>
+    <div class="fx-keycap" role="img" aria-label="PRESS"><b aria-hidden="true" style="--i:0">M</b><b aria-hidden="true" style="--i:1">A</b><b aria-hidden="true" style="--i:2">D</b><b aria-hidden="true" style="--i:3">L</b><b aria-hidden="true" style="--i:4">I</b><b aria-hidden="true" style="--i:5">B</b><b aria-hidden="true" style="--i:6">S</b></div>
+
+    <h1>MADLIBS: A Barbecue Story</h1>
+    
+    
+    <form>
+
+        <div class="container">
+
+        <div class="column">
+
+        <label for="answer">A number </label><input type="text" id="answer1" required>
+
+        <label for="answer">Food item </label><input type="text" id="answer2" required>
+
+        <label for="answer">Past-tense verb </label><input type="text" id="answer3" required>
+
+        <label for="answer">Adjective </label><input type="text" id="answer4" required>
+
+        <label for="answer">Adjective </label><input type="text" id="answer5" required>
+
+        </div>
+
+        <div class="column">
+
+        <label for="answer">Adverb ending in "ly" </label><input type="text" id="answer6" required>
+
+        <label for="answer">City </label><input type="text" id="answer7" required>
+
+        <label for="answer">Hobby </label><input type="text" id="answer8" required>
+
+        <label for="answer">Dessert </label><input type="text" id="answer9" required>
+
+        <label for="answer">Texture </label><input type="text" id="answer10" required>
+
+        </div>
+
+        </div>
+
+        <input type="submit">
+            
+        <div id="overlay" class="hidden">
+            <h1>MADLIBS: A Barbecue Story</h1>
+            <p id="story"></p>
+        </div>
+    </form>
+</body>
+</html>

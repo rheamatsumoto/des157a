@@ -1,0 +1,177 @@
+body {
+    background-color: rgb(255, 211, 218);
+    width: 1200px;
+    height: 750px;
+   
+}
+
+h1 {
+    font-family: "Host Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.4rem;
+  text-align: center;
+  color: rgb(199, 106, 122);
+  line-height: 0.4rem;
+}
+
+h2 {
+    font-family: "Host Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  text-align: center;
+  color: rgb(199, 106, 122);
+  line-height: 0.4rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    max-width: 14rem;
+    
+}
+
+.container {
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+}
+
+input[type="submit"] {
+    font-family: "Host Grotesk", sans-serif;
+    display: block;
+    font-size: 1rem;
+    background-color: rgb(249, 209, 237);
+    border-radius: 0.2rem;
+    align-items: center;
+    margin: 2rem auto;
+
+}
+
+
+#overlay {
+    position: absolute;
+    background-color: #ffc3ce;
+    top: 0;
+    left: 0;
+    width: 1200px;
+    height: 750px;
+}
+
+.hidden {
+    display: none;
+}
+
+#overlay #story {
+    box-sizing: border-box;
+    background-color:#fff;
+    padding: 20px;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+
+
+input[type="text"]:focus {
+    border: 1px solid #c45c8d;
+    
+    box-shadow: 0 4px 8px 0 rgba(104, 51, 72, 0.2), 0 6px 20px 0 rgba(108, 52, 65, 0.19);
+}
+
+
+label[for="answer"],
+#answer {
+    
+    color: rgb(199, 106, 122);
+    font-family: "Host Grotesk", sans-serif;
+    font-size: 1rem;
+}
+
+/* Colour tokens — override to re-skin the effect:
+   --ink    main text colour (defaults to currentColor)
+   --ink-2  primary accent   --ink-3  secondary accent */
+:root { --ink: currentColor; --ink-2: #78366a; --ink-3: #cf7ddf; }
+
+/* 90 Keycap — mechanical keycaps bottom out one after another, the skirt
+   collapsing under each cap as it clicks */
+.fx-keycap {
+  font: 700 19px/1 "JetBrains Mono", monospace;
+  letter-spacing: .02em;
+  display: flex;
+  gap: 3px;
+  padding-bottom: 9px;
+  color:#3d247a;
+  justify-content: center;
+  
+}
+.fx-keycap b {
+  position: relative;
+  font-weight: inherit;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 40px;
+  border-radius: 10px;
+  color: var(--ink);
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--ink) 22%, transparent) 0%,
+      color-mix(in srgb, var(--ink) 7%, transparent) 46%,
+      transparent 100%),
+    color-mix(in srgb, var(--ink-2) 10%, #8465cc);
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, var(--ink) 32%, transparent),
+    0 6px 0 color-mix(in srgb, var(--ink-2) 42%, #533b8d),
+    0 10px 16px rgba(43, 38, 47, 0.5);
+  animation: fx-keycap 3.4s cubic-bezier(.3, 1.4, .5, 1) infinite;
+  animation-delay: calc(var(--i) * .16s);
+}
+.fx-keycap b::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(circle at 50% 50%,
+    color-mix(in srgb, var(--ink-3) 55%, transparent),
+    transparent 70%);
+  opacity: 0;
+  animation: fx-keycap-click 3.4s ease-out infinite;
+  animation-delay: calc(var(--i) * .16s);
+}
+@keyframes fx-keycap {
+  0%, 8% {
+    transform: translateY(0);
+    box-shadow:
+      inset 0 1px 0 color-mix(in srgb, var(--ink) 32%, transparent),
+      0 6px 0 color-mix(in srgb, var(--ink-2) 42%, #302250),
+      0 10px 16px rgb(0 0 0 / .5);
+  }
+  16% {
+    transform: translateY(6px);
+    box-shadow:
+      inset 0 1px 0 color-mix(in srgb, var(--ink) 14%, transparent),
+      0 0 0 color-mix(in srgb, var(--ink-2) 42%, #0b0812),
+      0 3px 8px rgb(0 0 0 / .55);
+  }
+  30%, 100% {
+    transform: translateY(0);
+    box-shadow:
+      inset 0 1px 0 color-mix(in srgb, var(--ink) 32%, transparent),
+      0 6px 0 color-mix(in srgb, var(--ink-2) 42%, #0b0812),
+      0 10px 16px rgb(0 0 0 / .5);
+  }
+}
+@keyframes fx-keycap-click {
+  0%, 12% { opacity: 0; }
+  16%     { opacity: .9; }
+  34%,100%{ opacity: 0; }
+}
