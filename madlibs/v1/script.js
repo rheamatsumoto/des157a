@@ -4,7 +4,7 @@
     const form = document.querySelector('form');
     const overlay = document.querySelector('#overlay');
     const story = document.querySelector('#story');
-    const close = document.querySelector('#closebutton')
+    const close = document.querySelector('#button')
 
     form.addEventListener('submit', function (event) {
         event.preventDefault();
@@ -25,7 +25,11 @@
         I caught up with my friend who came from ${a7}, who said they had gotten into ${a8}. Towards the end, we had ${a9} which was interestingly ${a10}.`;
 
 
-        overlay.className = 'hidden';
+        overlay.className = '';
+
+        close.addEventListener('click', function(){
+            overlay.className = "hidden";
+        });
     });
         
         
