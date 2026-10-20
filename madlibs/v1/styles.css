@@ -53,6 +53,7 @@ input[type="submit"] {
 
 
 #overlay {
+    font-family: "Host Grotesk", sans-serif;
     position: absolute;
     background-color: #ffc3ce;
     top: 0;

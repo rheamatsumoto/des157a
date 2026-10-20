@@ -4,6 +4,7 @@
     const form = document.querySelector('form');
     const overlay = document.querySelector('#overlay');
     const story = document.querySelector('#story');
+    const close = document.querySelector('#closebutton')
 
     form.addEventListener('submit', function (event) {
         event.preventDefault();
@@ -19,10 +20,12 @@
         const a9 = document.querySelector('#answer9').value;
         const a10 = document.querySelector('#answer10').value;
     
-        story.innerHTML = `This summer break, my friends and I met for a barbeque. On the day of, I brought ${a1}.`;
+        story.innerHTML = `This summer break, my friends and I met for a barbeque. On the day of, I brought ${a1} ${a2}. 
+        Before we ate, we ${a3} by the pool. The food ended up being unexpectedly ${a4}. After eating, we played ${a5} music and we sang ${a6}.
+        I caught up with my friend who came from ${a7}, who said they had gotten into ${a8}. Towards the end, we had ${a9} which was interestingly ${a10}.`;
 
 
-        overlay.classList.remove('hidden');
+        overlay.className = 'hidden';
     });
         
         
